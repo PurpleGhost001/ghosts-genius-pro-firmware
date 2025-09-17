@@ -601,9 +601,9 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp 22.14
-    #define DEFAULT_Ki  1.31
-    #define DEFAULT_Kd 249.15
+    #define DEFAULT_Kp 17.86
+    #define DEFAULT_Ki  1.79
+    #define DEFAULT_Kd 44.46
   #endif
 #endif // PIDTEMP
 
@@ -641,9 +641,9 @@
   //#define PID_BED_DEBUG // Sends debug data to the serial port.
 
   // Genius Pro
-  #define DEFAULT_bedKp 22.14
-  #define DEFAULT_bedKi 1.31
-  #define DEFAULT_bedKd 249.15
+  #define DEFAULT_bedKp 27.54
+  #define DEFAULT_bedKi 2.60
+  #define DEFAULT_bedKd 194.65
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
@@ -916,7 +916,7 @@
  * Override with M92
  *                                      X, Y, Z [, I [, J [, K]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.121, 80.121, 402, 445 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.121, 80.11, 401.17, 436.13 }
 
 /**
  * Default Max Feed Rate (mm/s)
@@ -1564,7 +1564,7 @@
   // The height can be set with M420 Z<height>
   #define ENABLE_LEVELING_FADE_HEIGHT
   #if ENABLED(ENABLE_LEVELING_FADE_HEIGHT)
-    #define DEFAULT_LEVELING_FADE_HEIGHT 10.0 // (mm) Default fade height.
+    #define DEFAULT_LEVELING_FADE_HEIGHT 5.0 // (mm) Default fade height.
   #endif
 
   // For Cartesian machines, instead of dividing moves on mesh boundaries,
